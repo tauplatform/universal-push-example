@@ -1,0 +1,46 @@
+sdkversion: 6.0.0
+name: PushTest
+version: 1.0
+vendor: rhomobile
+rho_app_id: com.rhomobile.pushtest
+build: debug
+applog: rholog.txt
+
+capabilities:
+  - push
+
+iphone:
+  configuration: Release
+  sdk: latest
+  provisioning_style: Manual
+  # replace this provisioning info to your:
+  provisionprofile: "pushtest"
+  development_team: "PNQRMU2LPM"
+  codesignidentity: "iPhone Developer"
+  BundleIdentifier: com.tauplatform.pushtest
+  BundleURLScheme: pushtest
+
+
+wp8:
+  productid: 'f4b641c0-48ca-0135-3e28-3c075460fec0'
+
+android:
+  version: 4.1.0
+  logcatFilter: APP:I StrictMode:I DEBUG:I *:E
+
+
+wm:
+  extensions:
+    - webkit
+
+win32:
+  deployqt: 1
+  deploymsvc: 1
+
+extensions: []
+# if you want use FCM Google push - just add "fcm-push" extension to extension's list: 
+#extensions: ["fcm-push"]
+
+rhobundle:
+  exclude_items:
+  - thumb.db
