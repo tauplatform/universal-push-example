@@ -1,4 +1,4 @@
-# This is complete example with demonstration hiw use push ability from Rhodes application on iOS nad Android
+# This is complete example with demonstration how to use push ability from Rhodes application on iOS nad Android
 
 
 
