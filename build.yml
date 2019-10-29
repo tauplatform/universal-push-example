@@ -2,7 +2,6 @@ sdkversion: 6.0.0
 name: PushTest
 version: 1.0
 vendor: rhomobile
-rho_app_id: com.tauplatform.universalpushtest
 build: debug
 applog: rholog.txt
 
@@ -14,10 +13,10 @@ iphone:
   sdk: latest
   provisioning_style: Manual
   # replace this provisioning info to your:
-  provisionprofile: "pushtest"
-  development_team: "PNQRMU2LPM"
+  provisionprofile: "com.tauplatform.universalpushtest"
+  development_team: "<your development team id>"
   codesignidentity: "iPhone Developer"
-  BundleIdentifier: com.tauplatform.pushtest
+  BundleIdentifier: com.tauplatform.universalpushtest
   BundleURLScheme: pushtest
 
 
