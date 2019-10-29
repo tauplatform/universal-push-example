@@ -2,7 +2,7 @@ sdkversion: 6.0.0
 name: PushTest
 version: 1.0
 vendor: rhomobile
-rho_app_id: com.rhomobile.pushtest
+rho_app_id: com.tauplatform.universalpushtest
 build: debug
 applog: rholog.txt
 
@@ -27,6 +27,9 @@ wp8:
 android:
   version: 4.1.0
   logcatFilter: APP:I StrictMode:I DEBUG:I *:E
+  abis:
+    - arm
+    - x86
 
 
 wm:
@@ -37,8 +40,8 @@ win32:
   deployqt: 1
   deploymsvc: 1
 
-extensions: []
-# if you want use FCM Google push - just add "fcm-push" extension to extension's list: 
+extensions: ["fcm-push"]
+# if you want use FCM Google push - just add "fcm-push" extension to extension's list:
 #extensions: ["fcm-push"]
 
 rhobundle:
