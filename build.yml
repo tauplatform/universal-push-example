@@ -39,7 +39,7 @@ win32:
   deployqt: 1
   deploymsvc: 1
 
-extensions: ["fcm-push"]
+#extensions: ["fcm-push"]
 # if you want use FCM Google push - just add "fcm-push" extension to extension's list:
 #extensions: ["fcm-push"]
 
